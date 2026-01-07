@@ -22,7 +22,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="relative flex flex-col items-center pt-20 dark:bg-dark-deep">
+    <footer className="relative flex flex-col items-center pt-20 w-full">
       <a
         ref={homeRef}
         href="#hero-section"
@@ -37,7 +37,7 @@ const Footer = () => {
       </a>
 
       <hr className="h-0.5 my-4 bg-gray-300 w-[70%]" />
-      <span className="w-max font-medium text-sm my-2 text-foreground">
+      <span className=" w-max font-medium text-sm my-2 text-foreground">
         © 2026 Soluciones tecnológicas | Sebastian Perez
       </span>
     </footer>

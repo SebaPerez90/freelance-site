@@ -1,39 +1,7 @@
 "use client";
 
+import { stepByStep } from "@/constants/steps";
 import { motion } from "framer-motion";
-
-const stepByStepContent = [
-  {
-    id: "01",
-    title: "Nos conocemos",
-    description:
-      "Coordinamos una llamada para entender tu proyecto, ya sea una tienda online, un sitio web o una aplicación web. Definimos juntos el objetivo del proyecto y sus requisitos.",
-  },
-  {
-    id: "02",
-    title: "Dedinimos el diseño",
-    description:
-      "Creo bocetos y prototipos para mostrarte cómo se verá y funcionará tu sitio o app. También ayuda si ya tenes un diseño.",
-  },
-  {
-    id: "03",
-    title: "Manos a la obra",
-    description:
-      "Una vez aprobado el diseño, empiezo a desarrollar tu sitio o app. Coordinamos plazos de entrega y te mantengo al tanto del progreso.",
-  },
-  {
-    id: "04",
-    title: "Tu proyecto online",
-    description:
-      "Publicamos tu sitio o aplicación y lo dejamos todo listo para que empieces a usarlo sin complicaciones.",
-  },
-  {
-    id: "05",
-    title: "Post-lanzamiento",
-    description:
-      "Después del lanzamiento, sigo disponible para ayudarte con dudas, ajustes o mejoras futuras.",
-  },
-];
 
 const HowWorks = () => {
   return (
@@ -42,7 +10,7 @@ const HowWorks = () => {
       className="z-10 flex flex-col items-center justify-center gap-40 px-6 sm:px-10 w-full max-w-200 mx-auto"
     >
       <h2 className="text-4xl font-bold text-center">Como vamos a trabajar</h2>
-      {stepByStepContent.map((data, index) => (
+      {stepByStep.map((data, index) => (
         <motion.div
           transition={{
             duration: 0.2,
@@ -60,7 +28,7 @@ const HowWorks = () => {
           }
         >
           <span
-            className="text-7xl sm:text-9xl font-bold relative before:absolute before:left-12 before:top-12 before:w-12 before:h-12 before:rounded-full before:border-slate-900 dark:before:border-slate-600 before:border-10 before:blur-md before:scale-[5] before:bg-slate-400 before:-z-10 before:opacity-40 tracking-tighter"
+            className="text-7xl sm:text-9xl font-bold relative before:absolute before:left-12 before:top-12 before:w-12 before:h-12 before:rounded-full before:border-purple-700  before:border-10 before:blur-md before:scale-[5] before:bg-purple-100 before:-z-10 before:opacity-40 tracking-tighter"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {data.id}
@@ -72,8 +40,8 @@ const HowWorks = () => {
                 : ""
             } w-full md:w-[20em] z-20`}
           >
-            <h2 className="text-xl font-bold">{data.title}</h2>
-            <p className="paragraph mt-4 text-pretty dark:text-ligth-soft">
+            <h2 className="text-xl font-bold text-purple-500">{data.title}</h2>
+            <p className="mt-4 text-pretty text-slate-600">
               {data.description}
             </p>
           </div>

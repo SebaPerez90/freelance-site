@@ -3,11 +3,8 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 
-const navLinks = [
-  { href: "#home", label: "Inicio" },
-  { href: "#services", label: "Servicios" },
-  { href: "#pricing", label: "Planes" },
-];
+import { navLinks } from "@/constants/navLinks";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Header = () => {
   const headerRef = useRef<HTMLElement | null>(null);
@@ -25,29 +22,44 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Mensaje pre-armado para WhatsApp
+  const whatsappMessage = encodeURIComponent(
+    "¡Hola! Me gustaría consultar por tus servicios de desarrollo web."
+  );
+  const whatsappLink = `https://wa.me/5491132830604?text=${whatsappMessage}`; // reemplazá con tu número
+
   return (
     <header
       ref={headerRef}
-      className="flex items-center fixed w-full px-5 py-2 backdrop-blur-sm bg-white/50 z-50 dark:bg-dark-deep/50"
+      className="flex items-center fixed w-full p-5 backdrop-blur-sm bg-white/50 z-50 dark:bg-dark-deep/50"
     >
-      <div className="relative flex items-center gap-4 justify-center w-full max-w-350 mx-auto ">
-        <Image
-          src="/logo6.svg"
-          alt="logo"
-          width={120}
-          height={120}
-          className="absolute left-0 top-0"
-        />
+      <div className=" relative flex items-center gap-4 justify-between w-full max-w-350 mx-auto">
+        <Image src="/images/logo.png" alt="logo" width={40} height={40} />
 
-        <nav className="mt-4">
+        <nav>
           <ul className="flex gap-6">
             {navLinks.map((link) => (
-              <li key={link.href}>
+              <li
+                key={link.href}
+                className="hover:text-purple-500 transition-all duration-200"
+              >
                 <a href={link.href}>{link.label}</a>
               </li>
             ))}
           </ul>
         </nav>
+
+        {/* Botón WhatsApp */}
+        <div className="flex justify-center">
+          <a
+            href={whatsappLink}
+            target="_blank"
+            className="inline-flex items-center gap-2 bg-green-500/90 hover:bg-green-500 text-white px-5 py-2 rounded-lg text-base transition"
+          >
+            <FaWhatsapp className="text-xl" />
+            Hablemos
+          </a>
+        </div>
       </div>
     </header>
   );

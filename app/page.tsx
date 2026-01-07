@@ -6,17 +6,20 @@ import HowWorks from "@/components/HowWorks";
 import Footer from "@/components/Footer";
 import Services from "@/components/Services";
 import Benefits from "@/components/Benefits";
+import PricingSection from "@/components/PricingSection";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <main className="max-w-300 mx-auto flex flex-col gap-40">
         <Hero />
         <Services />
         <CTASlider />
         <HowWorks />
         <Benefits />
+        <PricingSection />
         <FAQAcordeon />
       </main>
       <Footer />
