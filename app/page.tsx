@@ -12,11 +12,11 @@ import Header from "@/components/Header";
 export default function Home() {
   return (
     <>
-      <Header />
-      <main className="max-w-300 mx-auto flex flex-col gap-40">
+      {/* <Header /> */}
+      <main className="max-w-300 mx-auto flex flex-col gap-40 ">
         <Hero />
-        <Services />
         <CTASlider />
+        <Services />
         <HowWorks />
         <Benefits />
         <PricingSection />

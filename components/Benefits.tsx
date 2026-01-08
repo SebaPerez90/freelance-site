@@ -1,40 +1,12 @@
 "use client";
 
+import { benefits } from "@/constants/benefits";
 import { motion } from "framer-motion";
 
 const Benefits = () => {
-  const benefits = [
-    {
-      id: 1,
-      icon: "⚡",
-      title: "Rápido y sin vueltas",
-      description: "Tu idea online en menos tiempo del que imaginás.",
-    },
-    {
-      id: 2,
-      icon: "🛠️",
-      title: "Profesional y personalizado",
-      description:
-        "Desarrollo y diseño personalizado a tu medida para reflejar la escena de tu proyecto.",
-    },
-    {
-      id: 3,
-      icon: "💸",
-      title: "Sin costos ocultos",
-      description: "Presupuesto claro y acorde a lo que necesitás.",
-    },
-    {
-      id: 4,
-      icon: "🤝",
-      title: "Acompañamiento real",
-      description:
-        "No te dejo solo: estoy para ayudarte antes, durante y luego del desarrollo.",
-    },
-  ];
-
   return (
     <section className="w-full flex items-center justify-center">
-      <div className="flex flex-col items-center gap-14 w-full px-6 sm:px-10 py-32 lg:py-14">
+      <div className="flex flex-col items-center gap-14 w-full px-6 sm:px-10 lg:py-14">
         <div className="flex flex-col items-start gap-5 w-[90%] lg:w-auto ">
           <h2 className="text-3xl md:text-5xl font-semibold">
             Descrubrí los beneficios de trabajar juntos!

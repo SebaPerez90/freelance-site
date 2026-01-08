@@ -5,9 +5,9 @@ const PricingSection = () => {
   return (
     <section id="pricing" className="px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="w-full sm:text-center mb-10">
           <h2 className="text-4xl font-bold">Nuestros planes</h2>
-          <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto my-5">
+          <p className="text-gray-600 leading-relaxed w-full sm:max-w-2/3 lg:max-w-3xl mx-auto my-5">
             Elige el plan que mejor se adapte a tu negocio. Cada plan está
             diseñado para cubrir las necesidades específicas de tu negocio, ya
             sea para mostrar tu producto o servicio, como gestionar todo tu
@@ -15,15 +15,16 @@ const PricingSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 place-items-center gap-8 ">
+        <div className="grid lg:grid-cols-3 max-[1024]:place-items-center gap-8 ">
           {plans.map((plan, index) => (
             <div
               key={index}
               className="relative bg-white rounded-2xl shadow-lg px-8 py-10 flex flex-col justify-between border border-gray-100 max-w-125"
             >
               <div className="h-full flex flex-col justify-between">
-                <span className="text-4xl font-sans font-semibold text-gray-900 my-4">
-                  {plan.price} <span className="text-sm">ARS</span>
+                <span className="text-4xl font-sans font-semibold text-gray-900 my-7">
+                  {plan.price}{" "}
+                  <span className="text-sm relative -top-1">ARS</span>
                 </span>
                 <div className="h-full">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">

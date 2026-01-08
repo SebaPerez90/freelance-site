@@ -25,15 +25,16 @@ const benefits = [
 
 const Hero = () => {
   return (
-    <section id="hero-section" className="w-full flex flex-col h-dvh relative">
-      <div className="z-20  flex flex-col gap-12 items-center justify-center h-full  relative bottom-48 ">
-        {/* <header className="flex flex-col items-center justify-center gap-10 text-center w-[90%] lg:w-[60em] xl:w-[75em] mx-auto"> */}
-        <h1 className="text-4xl md:text-6xl font-bold text-center leading-tight tracking-tighter text-black max-w-200">
+    <section
+      id="hero-section"
+      className="w-full flex flex-col h-dvh relative overflow-hidden"
+    >
+      <div className="z-20 flex flex-col gap-12 items-center justify-center h-full  relative bottom-48">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center leading-tight tracking-tighter text-blackt mx-7 lg:mx-0 max-w-200">
           <strong className="text-purple-600">Impulsá tu negocio</strong> con
-          soluciones digitales por vos.
+          soluciones digitales que trabajan por vos.
         </h1>
-        {/* </header> */}
-        <ul className="absolute -right-32 -bottom-14 w-112.5 space-y-4">
+        <ul className=" xl:absolute -right-32 -bottom-14 w-112.5 space-y-4">
           {benefits.map((benefit) => {
             const Icon = benefit.icon;
 
@@ -61,7 +62,9 @@ const Hero = () => {
       </div>
 
       <div
-        className="relative before:absolute before:w-100 before:h-36 before:left-0 before:right-0 before:mx-auto before:-translate-y-100 before:bg-radial  before:from-purple-400 before:to-purple-800/50 before:-z-10 before:scale-x-200 before:blur-3xl before:-rotate-25 before:rounded-full
+        className="relative 
+
+        before:absolute before:w-100 before:h-36 before:left-0 before:right-0 before:mx-auto before:-translate-y-100 before:bg-radial  before:from-purple-400 before:to-purple-800/50 before:-z-10 before:scale-x-200 before:blur-3xl before:-rotate-25 before:rounded-full
     after:absolute after:w-100 after:h-36 after:left-0 after:right-0 after:mx-auto after:-translate-y-110 after:bg-radial  after:from-blue-400/30 after:to-blue-800/30 after:-z-20 after:scale-x-200 after:blur-3xl after:-rotate-2a5 after:rounded-full  
       "
       >
@@ -70,7 +73,7 @@ const Hero = () => {
           alt="hero"
           width={470}
           height={470}
-          className="absolute bottom-0 mx-auto left-0 right-0 mask-[radial-gradient(circle,black_45%,transparent_82%)]"
+          className="absolute bottom-20 sm:bottom-0 mx-auto left-0 right-0 mask-[radial-gradient(circle,black_45%,transparent_82%)]"
         />
       </div>
     </section>
