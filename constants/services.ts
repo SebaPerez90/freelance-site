@@ -17,7 +17,7 @@ export const services = [
     id: 3,
     title: "Aplicacion a Medida",
     description:
-      "Desarrollo aplicaciones para optimizar procesos específicos de tu negocio. Acá ya contas con tu propia base de datos, desde un solo lugar gestiones todo; procesos, stock, ventas, clientes, etc.",
+      "Software para optimizar procesos específicos de tu negocio. Acá ya contas con tu propia base de datos, desde un solo lugar gestiones todo; procesos, stock, ventas, clientes, etc.",
     CTA: "Colaboremos!",
   },
 ];

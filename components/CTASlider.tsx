@@ -9,6 +9,12 @@ import { Button } from "./ui/button";
 import Image from "next/image";
 
 const Slider = () => {
+  // Mensaje pre-armado para WhatsApp
+  const whatsappMessage = encodeURIComponent(
+    "¡Hola! Me gustaría consultar por tus servicios de desarrollo web."
+  );
+  const whatsappLink = `https://wa.me/5491132830604?text=${whatsappMessage}`; // reemplazá con tu número
+
   return (
     <section className=" flex flex-col justify-center items-center gap-28">
       <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-16 px-10 sm:px-0">
@@ -25,7 +31,9 @@ const Slider = () => {
           </div>
 
           <Button size="lg" className="py-6">
-            <a href="#contact-me-form">Potenciá tu negocio ahora!</a>
+            <a href={whatsappLink} target="_blank">
+              Potenciá tu negocio ahora!
+            </a>
           </Button>
         </div>
 

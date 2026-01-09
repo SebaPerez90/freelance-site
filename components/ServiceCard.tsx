@@ -44,9 +44,9 @@ const ServiceCard = ({
         <h3 className="text-center text-xl font-semibold">{title}</h3>
         <p className="paragraph mt-5">{description}</p>
       </div>
-      <Button size={"lg"} className="mx-auto">
+      {/* <Button size={"lg"} className="mx-auto">
         <a href="#contact-me-form">{CTA}</a>
-      </Button>
+      </Button> */}
     </div>
   );
 };

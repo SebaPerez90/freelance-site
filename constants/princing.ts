@@ -1,7 +1,7 @@
 export const plans = [
   {
     name: "Software a medida",
-    price: "$990.000",
+    price: "$1.500.000",
     description:
       "Perfecto para gestionar aboslutamente todo tu negocio en una sola plataforma.",
     features: [
@@ -14,7 +14,7 @@ export const plans = [
       "Soporte y mantenimiento post-entrega",
     ],
     popular: false,
-    cta: "Reservar clase",
+    cta: "Enviame un mensaje",
   },
   {
     name: "Sitio web",
@@ -29,7 +29,7 @@ export const plans = [
       "Hosting genérico gratis",
     ],
     popular: true,
-    cta: "Comprar paquete",
+    cta: "Enviame un mensaje",
   },
   {
     name: "Web interactiva",
@@ -45,6 +45,6 @@ export const plans = [
       "Hosting genérico gratis",
     ],
     popular: false,
-    cta: "Activar membresía",
+    cta: "Enviame un mensaje",
   },
 ];
