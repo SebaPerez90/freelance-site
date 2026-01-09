@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Sebastian Perez - Desarrollador Web",
+    title: "Sebastian Perez 🧑‍💻 | Desarrollador Web",
     description:
       "Desarrollador web freelance especializado en crear sitios web y soluciones a medida.",
   },
