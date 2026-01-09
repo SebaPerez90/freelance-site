@@ -13,9 +13,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://seba-perez.vercel.app/"),
   title: "Sebastian Perez - Desarrollador Web",
   description:
     "Desarrollador web freelance especializado en crear tiendas online, sitios web y aplicaciones a medida para emprendedores y pequeñas empresas.",
+
+  openGraph: {
+    title: "Sebastian Perez - Desarrollador Web",
+    description:
+      "Desarrollador web freelance especializado en crear tiendas online, sitios web y aplicaciones a medida.",
+    url: "https://seba-perez.vercel.app/",
+    siteName: "Sebastian Perez",
+    locale: "es_AR",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Sebastian Perez - Desarrollador Web",
+    description:
+      "Desarrollador web freelance especializado en crear sitios web y soluciones a medida.",
+  },
 };
 
 export default function RootLayout({
@@ -24,9 +42,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable}  antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
