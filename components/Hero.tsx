@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <section
       id="hero-section"
-      className="w-full flex flex-col mt-16 sm:mt-0 h-[120dvh] sm:h-dvh relative overflow-hidden sm:min-h-275 lg:overflow-visible"
+      className="w-full flex flex-col mt-16 sm:mt-0 h-[120dvh] sm:h-dvh relative overflow-hidden  max-[640px]:min-h-275 lg:overflow-visible"
     >
       <div className="z-20 flex flex-col gap-12 items-center justify-center h-full  relative bottom-48">
         <h1 className="text-4xl md:text-5xl font-bold text-center leading-tight tracking-tighter text-blackt mx-7 lg:mx-0 max-w-200">
