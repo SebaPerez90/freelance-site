@@ -6,14 +6,37 @@ import NavLinks from "./NavLinks";
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const closeMenu = () => {
+    const line_a = document.getElementById("line_a");
+    const line_b = document.getElementById("line_b");
+    const line_c = document.getElementById("line_c");
+
+    const main_section = document.getElementById("main-section");
+    const footer_section = document.getElementById("footer");
+
+    line_a?.classList.remove("[rotate:45deg]", "top-2");
+    line_b?.classList.remove("opacity-0");
+    line_c?.classList.remove("[rotate:-45deg]", "bottom-2");
+
+    main_section?.classList.remove("blur-[2px]");
+    footer_section?.classList.remove("blur-[2px]");
+
+    document.body.style.overflow = "";
+    setIsOpen(false);
+  };
+
   return (
     <>
-      <HamburguerButton isOpen={isOpen} setIsOpen={setIsOpen} />
+      <HamburguerButton
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        closeMenu={closeMenu}
+      />
       <AnimatePresence>
         {isOpen && (
           <motion.div
             id="modal"
-            onClick={() => setIsOpen(false)}
+            onClick={closeMenu}
             className="bg-black/50 backdrop-blur-lg w-full fixed left-0 top-0 h-screen flex justify-end items-start shadow-xl z-50"
           >
             <motion.div
