@@ -14,12 +14,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://seba-perez.vercel.app/"),
-  title: "Sebastian Perez - Desarrollador Web",
+  title: "Sebastian Perez 🧑‍💻 | Desarrollador Web",
   description:
     "Desarrollador web freelance especializado en crear tiendas online, sitios web y aplicaciones a medida para emprendedores y pequeñas empresas.",
 
   openGraph: {
-    title: "Sebastian Perez - Desarrollador Web",
+    title: "Sebastian Perez 🧑‍💻 | Desarrollador Web",
     description:
       "Desarrollador web freelance especializado en crear tiendas online, sitios web y aplicaciones a medida.",
     url: "https://seba-perez.vercel.app/",
