@@ -22,11 +22,14 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="relative flex flex-col items-center pt-20 w-full">
+    <footer
+      id="footer"
+      className="relative flex flex-col items-center pt-20 w-full"
+    >
       <a
         ref={homeRef}
         href="#hero-section"
-        className="opacity-0 transition-all duration-500 pointer-events-none z-50"
+        className="hidden sm:block opacity-0 transition-all duration-500 pointer-events-none z-50"
       >
         <button
           type="button"
