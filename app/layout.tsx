@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     siteName: "Sebastian Perez",
     locale: "es_AR",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Sebastian Perez - Desarrollador Web",
+      },
+    ],
   },
 
   twitter: {
